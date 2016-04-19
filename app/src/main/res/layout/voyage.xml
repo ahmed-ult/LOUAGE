@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gree">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programmer Votre Voyage"
+        android:id="@+id/voyage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#0000FF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Station Départ"
+        android:id="@+id/viewdepart"
+        android:layout_marginStart="48dp"
+        android:layout_below="@+id/voyage"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:textColorHighlight="#035afd"
+        android:textColor="#077db4"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Station D'arrivée"
+        android:id="@+id/viewarrive"
+        android:layout_below="@+id/viewdepart"
+        android:layout_alignStart="@+id/viewdepart"
+        android:layout_marginTop="75dp"
+        android:textColorHighlight="#035afd"
+        android:textColor="#077db4"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerdepart"
+        android:layout_below="@+id/viewdepart"
+        android:layout_alignStart="@+id/viewdepart"
+        android:layout_alignEnd="@+id/voyage"
+        android:layout_marginTop="10dp"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerarrive"
+        android:layout_below="@+id/viewarrive"
+        android:layout_alignStart="@+id/viewarrive"
+        android:layout_alignEnd="@+id/spinnerdepart"
+        android:layout_marginTop="10dp"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date de voyage"
+        android:id="@+id/textView"
+        android:layout_below="@+id/spinnerarrive"
+        android:layout_alignStart="@+id/spinnerarrive"
+        android:textStyle="bold"
+        android:textColor="#077db4"
+        android:textColorHighlight="#035afd"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heure de voyage"
+        android:id="@+id/textView2"
+        android:layout_marginTop="7dp"
+        android:textSize="18dp"
+        android:textColor="#077db4"
+        android:textColorHighlight="#035afd"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerheure"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignEnd="@+id/viewdepart"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerminute"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/spinnerheure" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:id="@+id/btnvalider"
+        android:layout_below="@+id/spinnerheure"
+        android:layout_alignStart="@+id/spinnerheure"
+        android:textColor="#fa0e1e"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
